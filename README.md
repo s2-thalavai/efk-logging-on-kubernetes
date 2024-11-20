@@ -1,9 +1,9 @@
-## EFK Setup on Kubernetes
+# EFK Setup on Kubernetes
 
 
 
 
-# install Elastic Search Cluster
+## install Elastic Search Cluster
 
 ![alt text](./assets/image.png)
 
@@ -11,20 +11,20 @@
 
 
 
-# Install Kibana
+## Install Kibana
 
 ![alt text](./assets/image-1.png)
 
 
 
 
-# Install FluentD
+## Install FluentD
 
 ![alt text](./assets/image-2.png)
 
 ![alt text](./assets/image-3.png)
 
 
-# test application Logs Filtering
+## test application Logs Filtering
 
 ![alt text](./assets/image-5.png)
