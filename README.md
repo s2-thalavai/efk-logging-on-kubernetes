@@ -30,6 +30,7 @@
 ![alt text](image.png)
 
 
+Kibana Search Filters for K8s Pod
 
         kubernetes.pod_name:counter-en
 
