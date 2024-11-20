@@ -27,4 +27,17 @@
 
 ## test application Logs Filtering
 
-![alt text](./assets/image-5.png)
+![alt text](image.png)
+
+
+
+        kubernetes.pod_name:counter-en
+
+        kubernetes.pod_name:counter-es
+
+        kubernetes.pod_name:counter
+
+
+![alt text](./assets/image.png)
+
+![alt text](image-1.png)
