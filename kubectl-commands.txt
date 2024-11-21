@@ -1,0 +1,46 @@
+kubectl get namespaces
+
+
+
+
+kubectl create -f elasticsearch_svc.yaml
+
+
+kubectl rollout status sts/es-cluster --namespace=efk-logging
+
+
+kubectl port-forward es-cluster-0 9200:9200 --namespace=efk-logging
+kubectl port-forward pod/kibana-88c77fb8d-bnlgh 5601:5601 --namespace=efk-logging
+
+
+kubectl get services --namespace=efk-logging
+
+
+kubectl port-forward pod/kibana-88c77fb8d-rlrgq 5601:5601 --namespace=efk-logging
+
+
+
+
+kubectl get clusterroles
+kubectl get clusterrolebindings
+
+
+kubectl delete clusterrolebinding fluentd
+kubectl delete clusterrole fluentd
+
+kubectl delete serviceaccount -n efk-logging fluentd
+kubectl delete daemonsets -n efk-logging fluentd
+
+kubectl delete --all pods --namespace=foo
+
+kubectl delete --all deployments --namespace=foo
+
+
+kubectl get ds --namespace=efk-logging
+
+
+kubectl delete daemonsets,replicasets,services,deployments,pods,rc,ingress --all --all-namespaces
+
+
+
+kubernetes.pod_name:counter-en
